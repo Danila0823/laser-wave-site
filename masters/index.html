@@ -1,0 +1,174 @@
+﻿<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Мастера Laser Wave - IPL-эпиляция в Рязани</title>
+    <meta name="description"
+        content="Мастера студии Laser Wave (Рязань): деликатный подход, регламент, комфорт с охлаждением. Онлайн-запись." />
+
+    <meta property="og:title" content="Мастера - Laser Wave (Рязань)" />
+    <meta property="og:description" content="Познакомьтесь с мастерами студии и выберите удобное время онлайн." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script>window.__ASSET_PREFIX__ = "../";</script>
+
+    <!-- Yandex Metrika: [YANDEX_METRIKA_ID] -->
+    <!-- VK Pixel: [VK_PIXEL_ID] -->
+</head>
+
+<body>
+    <a class="skip" href="#content">Перейти к содержанию</a>
+
+    <header class="header">
+        <div class="container header__in">
+            <a class="brand" href="/">
+                <span class="brand__mark" aria-hidden="true"></span>
+                <span class="brand__text">
+                    <span class="brand__name" data-bind="brandName">Laser Wave</span>
+                    <span class="brand__city" data-bind="brandCity">Рязань</span>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Навигация">
+                <a href="/">Главная</a>
+                <a href="/prices/">Цены</a>
+                <a href="/promos/">Акции</a>
+                <a href="/masters/">Мастера</a>
+                <a href="/procedure/">О процедуре</a>
+                <a href="/prep/">Подготовка</a>
+                <a href="/reviews/">Отзывы</a>
+                <a href="/contacts/">Контакты</a>
+            </nav>
+
+            <div class="header__cta">
+                <a class="btn btn--ghost btn--sm" data-tg aria-label="Написать в Telegram" href="#">Telegram</a>
+                <a class="btn btn--primary btn--sm" data-booking-link href="#">Записаться</a>
+            
+                <div class="theme-toggle">
+                    <span class="theme-icon" data-theme-icon aria-hidden="true">🌙</span>
+                    <button class="theme-switch" type="button" data-theme-toggle role="switch" aria-checked="false" aria-label="Сменить тему"></button>
+                </div>            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="hero hero--compact">
+            <div class="container">
+                <h1 class="h1">Мастера Laser Wave</h1>
+                <p class="lead">Деликатный подход, комфорт с охлаждением и понятный план курса. Если есть сомнения по
+                    противопоказаниям - лучше сначала написать.</p>
+
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                    <a class="btn btn--primary" data-booking-link href="#">Выбрать время онлайн</a>
+                    <a class="btn btn--ghost" href="/contacts/">Задать вопрос</a>
+                </div>
+
+                <div class="kickers" aria-label="Доверие и сервис" style="margin-top:14px">
+                    <span class="badge" data-bind="trustYandexText">Рейтинг 5.0, 165+ отзывов (Яндекс.Карты)</span>
+                    <span class="badge" data-bind="trustVkText">VK</span>
+                    <span class="badge">Ответ: <span data-bind="replyTime"></span></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="h2">Кто будет проводить процедуру</h2>
+                <div class="grid grid--2" data-masters></div>
+
+                <p class="small" style="margin-top:10px">
+                    Мы работаем по регламенту и аккуратно ведём клиента по курсу.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="lead">
+            <div class="container grid grid--2">
+                <div class="card">
+                    <div class="card__in">
+                        <h2 class="h2" style="margin-top:0">Помочь выбрать мастера и зоны</h2>
+                        <p class="small">Напишите, какие зоны интересуют - ответим кратко и подскажем, с чего начать.
+                        </p>
+
+                        <form class="form" data-form="lead">
+                            <div class="field">
+                                <label>Имя</label>
+                                <input name="name" autocomplete="name" placeholder="Как к вам обращаться" required />
+                            </div>
+                            <div class="field">
+                                <label>Телефон</label>
+                                <input name="phone" inputmode="tel" placeholder="+7 ..." required />
+                            </div>
+                            <div class="field">
+                                <label>Удобный мессенджер</label>
+                                <select name="messenger">
+                                    <option value="telegram">Telegram</option>
+                                    <option value="whatsapp">WhatsApp</option>
+                                    <option value="vk">VK</option>
+                                    <option value="call">Звонок</option>
+                                </select>
+                            </div>
+                            <button class="btn btn--primary" type="submit">Отправить</button>
+                            <div class="small hidden" data-form-ok>Заявка отправлена. Спасибо!</div>
+                            <div class="small hidden" data-form-fail>Не получилось отправить. Попробуйте позже.</div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__in">
+                        <h2 class="h2" style="margin-top:0">Контакты</h2>
+                        <div class="small">
+                            Адрес: <span data-bind="addressLine">...</span><br />
+                            График: <span data-bind="hours">...</span><br />
+                            Телефон: <a data-phone href="#"><span data-bind="phoneDisplay">...</span></a>
+                        </div>
+
+                        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+                            <a class="btn btn--primary" data-booking-link href="#">Онлайн-запись</a>
+                            <a class="btn" data-tg href="#" aria-label="Telegram">Telegram</a>
+                            <a class="btn" data-wa href="#" aria-label="WhatsApp">WhatsApp</a>
+                            <a class="btn" data-vk href="#" aria-label="VK">VK</a>
+                        </div>
+
+                        <hr class="sep" />
+                        <div class="small">
+                            Есть противопоказания - нужна консультация.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="hidden" data-boot-fail>
+                    <p class="small">Не удалось загрузить контент. Проверьте путь к assets/data/content.json.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__in">
+            <div><strong>Laser Wave</strong> - <span data-bind="brandCity">Рязань</span></div>
+            <div>Адрес: <span data-bind="addressShort">...</span> · График: <span data-bind="hours">...</span> · Тел.:
+                <a data-phone href="#"><span data-bind="phoneDisplay">...</span></a>
+            </div>
+            <div data-legal>
+                <a href="[УТОЧНИТЬ: ссылка на политику]" data-href="privacy">Политика</a> ·
+                <a href="[УТОЧНИТЬ: ссылка на согласие]" data-href="consent">Согласие</a> ·
+                <a href="[УТОЧНИТЬ: ссылка на оферту]" data-href="offer">Оферта</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js" defer></script>
+</body>
+
+</html>
+
+
