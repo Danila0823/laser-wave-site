@@ -28,8 +28,8 @@ function cleanText(value) {
 }
 
 function rub(n) {
-    if (typeof n !== "number" || !isFinite(n)) return "—";
-    return new Intl.NumberFormat("ru-RU").format(Math.round(n)) + " ₽";
+    if (typeof n !== "number" || !isFinite(n)) return "\u2014";
+    return new Intl.NumberFormat("ru-RU").format(Math.round(n)) + "\u00A0\u20BD";
 }
 
 function getUtm() {

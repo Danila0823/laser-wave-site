@@ -47,11 +47,13 @@
             <div class="header__cta">
                 <a class="btn btn--ghost btn--sm" data-tg aria-label="Написать в Telegram" href="#">Telegram</a>
                 <a class="btn btn--primary btn--sm" data-booking-link href="#">Записаться</a>
-            
+
                 <div class="theme-toggle">
                     <span class="theme-icon" data-theme-icon aria-hidden="true">🌙</span>
-                    <button class="theme-switch" type="button" data-theme-toggle role="switch" aria-checked="false" aria-label="Сменить тему"></button>
-                </div>            </div>
+                    <button class="theme-switch" type="button" data-theme-toggle role="switch" aria-checked="false"
+                        aria-label="Сменить тему"></button>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -175,15 +177,16 @@
 
                 <div class="guide">
                     <div class="guide__tabs" role="tablist" aria-label="Рекомендации по времени">
-                        <button class="guide__tab" type="button" role="tab" aria-selected="true"
-                            data-guide-tab="before">До процедуры</button>
-                        <button class="guide__tab" type="button" role="tab" aria-selected="false" data-guide-tab="day">В
-                            день процедуры</button>
-                        <button class="guide__tab" type="button" role="tab" aria-selected="false"
-                            data-guide-tab="after">После процедуры</button>
+                        <button class="guide__tab" id="guide-tab-before" type="button" role="tab" aria-selected="true"
+                            aria-controls="guide-panel-before" data-guide-tab="before">До процедуры</button>
+                        <button class="guide__tab" id="guide-tab-day" type="button" role="tab" aria-selected="false"
+                            aria-controls="guide-panel-day" data-guide-tab="day">В день процедуры</button>
+                        <button class="guide__tab" id="guide-tab-after" type="button" role="tab" aria-selected="false"
+                            aria-controls="guide-panel-after" data-guide-tab="after">После процедуры</button>
                     </div>
 
-                    <div class="guide__panel is-active" role="tabpanel" data-guide-panel="before">
+                    <div class="guide__panel is-active" id="guide-panel-before" role="tabpanel"
+                        aria-labelledby="guide-tab-before" data-guide-panel="before">
                         <div class="card">
                             <div class="card__in">
                                 <h3 style="margin:0 0 10px">За 2 недели до</h3>
@@ -204,7 +207,8 @@
                         </div>
                     </div>
 
-                    <div class="guide__panel" role="tabpanel" data-guide-panel="day">
+                    <div class="guide__panel" id="guide-panel-day" role="tabpanel" aria-labelledby="guide-tab-day"
+                        data-guide-panel="day">
                         <div class="card">
                             <div class="card__in">
                                 <h3 style="margin:0 0 10px">В день процедуры</h3>
@@ -226,7 +230,8 @@
                         </div>
                     </div>
 
-                    <div class="guide__panel" role="tabpanel" data-guide-panel="after">
+                    <div class="guide__panel" id="guide-panel-after" role="tabpanel"
+                        aria-labelledby="guide-tab-after" data-guide-panel="after">
                         <div class="card">
                             <div class="card__in">
                                 <h3 style="margin:0 0 10px">После процедуры</h3>
@@ -421,5 +426,3 @@
 </body>
 
 </html>
-
-
